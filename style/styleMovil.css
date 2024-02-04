@@ -307,4 +307,9 @@ main {
   .InputButton {
     height: 60%;
   }
+
+  #containerOutput {
+    position: relative;
+    height: 90%;
+  }
 }
