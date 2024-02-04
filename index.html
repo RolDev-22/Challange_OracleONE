@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style/styleMovil.css">
+    <link rel="stylesheet" href="style/styleMovil.css" />
     <title>Challenge_OrecleONE</title>
   </head>
   <body>
@@ -19,32 +19,43 @@
           <textarea
             name="textAreaIn"
             id="inputTextArea"
-            style="resize: none;"
+            style="resize: none"
             placeholder="Ingrese el texto aqui"
           ></textarea>
           <div id="messageInput">
-            <img
-              src="public/aviso.png"
-              alt="aviso de formato del texto admitido"
-              id="messageWarning"
-            />
-            <span id="message">Solo letras minúsculas y sin acentos</span>
+            <p id="message">
+              <img
+                src="public/aviso.png"
+                alt="aviso de formato del texto admitido"
+                id="messageWarning"
+              />
+              Solo letras minúsculas y sin acentos
+            </p>
+            <!-- <span id="message">Solo letras minúsculas y sin acentos</span> -->
           </div>
         </div>
       </section>
-      
+
       <section class="sections">
         <div id="containerButtons">
-          <input type="button" value="Encriptar" class="InputButton"/>
-          <input type="button" value="Desencriptar" class="InputButton"/>
+          <input type="button" value="Encriptar" class="InputButton" />
+          <input type="button" value="Desencriptar" class="InputButton" />
         </div>
       </section>
 
       <section class="sections">
         <div id="containerOutput">
           <h2 id="subtitleOutput">Ningún mensaje fue encontrado</h2>
-          <textarea name="textAreaOut" id="OutputTextArea" cols="30" rows="10" style="display: none;"></textarea>
-          <spam id="textOutput">Ingrese el texto que deses encriptar o desencriptar</spam>
+          <textarea
+            name="textAreaOut"
+            id="OutputTextArea"
+            cols="30"
+            rows="10"
+            style="display: none"
+          ></textarea>
+          <spam id="textOutput"
+            >Ingrese el texto que deses encriptar o desencriptar</spam
+          >
         </div>
       </section>
     </main>

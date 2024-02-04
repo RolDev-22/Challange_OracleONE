@@ -182,7 +182,7 @@ main {
 }
 
 .sections {
-  height: 40%;
+  height: 50%;
   width: 98%;
   display: flex;
   flex-direction: column;
@@ -196,13 +196,13 @@ main {
   height: 98%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 }
 
 #inputTextArea {
   width: 95%;
-  height: 85%;
+  height: 90%;
   outline: none;
   padding: 5px;
   border: none;
@@ -220,7 +220,7 @@ main {
 }
 
 #messageInput {
-  height: 15%;
+  height: 10%;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -231,13 +231,20 @@ main {
   font-size: 12px;
 }
 
+#message{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 15px;
+}
+
 #messageWarning {
   height: 20px;
   width: 18px;
 }
 
 .sections:nth-child(2) {
-  height: 20%;
+  height: 25%;
 }
 
 #containerButtons {
@@ -266,7 +273,7 @@ main {
 
 #containerOutput {
   position: relative;
-  height: 90%;
+  height: 70%;
   width: 90%;
   display: flex;
   flex-direction: column;
@@ -291,12 +298,26 @@ main {
   color: var(--secundaryColor);
 }
 
-@media (width >= 720px) {
+@media (width >= 767px) {
+
+  header{
+    height: 12%;
+  }
+
+  #inputTextArea{
+    height: 100%;
+  }
+
   .sections {
     height: 60%;
   }
+
+  .sections:nth-child(2) {
+    height: 15%;
+  }
+
   .sections:nth-child(3) {
-    height: 20%;
+    height: 30%;
   }
 
   #containerButtons {
@@ -305,6 +326,11 @@ main {
   }
 
   .InputButton {
-    height: 60%;
+    height: 70%;
+  }
+
+  #containerOutput {
+    padding: 10px;
+    height: 80%;
   }
 }
