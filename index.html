@@ -22,21 +22,21 @@
             style="resize: none"
             placeholder="Ingrese el texto aqui"
           ></textarea>
-          <div id="messageInput">
-            <p id="message">
-              <img
-                src="public/aviso.png"
-                alt="aviso de formato del texto admitido"
-                id="messageWarning"
-              />
-              Solo letras minúsculas y sin acentos
-            </p>
-            <!-- <span id="message">Solo letras minúsculas y sin acentos</span> -->
-          </div>
         </div>
       </section>
 
       <section class="sections">
+        <div id="messageInput">
+          <p id="message">
+            <img
+              src="public/aviso.png"
+              alt="aviso de formato del texto admitido"
+              id="messageWarning"
+            />
+            Solo letras minúsculas y sin acentos
+          </p>
+          <!-- <span id="message">Solo letras minúsculas y sin acentos</span> -->
+        </div>
         <div id="containerButtons">
           <input type="button" value="Encriptar" class="InputButton" />
           <input type="button" value="Desencriptar" class="InputButton" />
@@ -45,6 +45,14 @@
 
       <section class="sections">
         <div id="containerOutput">
+          <div id="containerImage">
+            <img
+              id="ImageTextPc"
+              src="public/Message.png"
+              alt="Imagen alusiva a no inserción de texto"
+            />
+          </div>
+
           <h2 id="subtitleOutput">Ningún mensaje fue encontrado</h2>
           <textarea
             name="textAreaOut"
@@ -53,9 +61,9 @@
             rows="10"
             style="display: none"
           ></textarea>
-          <spam id="textOutput"
-            >Ingrese el texto que deses encriptar o desencriptar</spam
-          >
+          <spam id="textOutput">
+            Ingrese el texto que deses encriptar o desencriptar
+          </spam>
         </div>
       </section>
     </main>
