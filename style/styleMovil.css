@@ -291,7 +291,7 @@ main {
   color: var(--secundaryColor);
 }
 
-@media (width >= 646px) {
+@media (width >= 720px) {
   .sections {
     height: 60%;
   }
