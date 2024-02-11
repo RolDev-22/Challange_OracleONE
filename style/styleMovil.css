@@ -9,6 +9,7 @@
   font-style: normal; */
 
 :root {
+  --mainColor: #f3f5fc;
   --primaryColor: #0a3871;
   --secundaryColor: #67808e;
   --textos: #343a40;
@@ -138,3 +139,164 @@ table {
   border-spacing: 0;
 }
 
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+body{
+  height: 100vh;
+  width: 100%;
+  min-width: 300px;
+  min-height: 300px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+ 
+}
+
+header{
+  height: 10%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+#containerHeader{
+  height: 95%;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+
+}
+
+#containerHeader > img{
+  width: 40px;
+  height: 50px;
+}
+
+main{
+  position: absolute;
+  top: 10%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  row-gap: 5px;
+
+}
+
+.sectionsBody{
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5px;
+
+}
+
+#containertextAreaInput{
+  width: 95%;
+  min-height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 5px;
+
+}
+
+#textAreaInput{
+  width: 95%;
+  padding: 5px;
+  resize: none;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  color: var(--primaryColor);
+  background-color: transparent;
+}
+
+#textAreaInput::placeholder{
+  color: var(--primaryColor);
+}
+
+#containerButtons{
+  width: 95%;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  row-gap: 5px;
+ 
+}
+
+#messageInformation{
+  width: 100%;
+  display: flex;
+  padding: 5px;
+
+}
+
+#messageInf{
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 12px;
+
+}
+
+#messageInf > img{
+  width: 20px;
+  height: 25px;
+}
+
+#buttons{
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 10px;
+}
+
+.buttonsInput{
+  width: 95%;
+  height: 60px;
+  border: 1px solid var(--primaryColor);
+  border-radius: 15px;
+  background-color: var(--primaryColor);
+  color: var(--mainColor);
+  font-size: 15px;
+}
+
+.buttonsInput:nth-child(2){
+  background-color: var(--mainColor);
+  color: var(--primaryColor);
+}
+
+@media (height < 550px) {
+  main{
+    top: 15%;
+  }
+
+  header{
+    height: 15%;
+  }
+}
