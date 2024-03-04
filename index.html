@@ -18,8 +18,9 @@
         <div id="containertextAreaInput">
           <textarea
             name="textAreaIn"
-            rows="5"
+            rows="1"
             id="textAreaInput"
+            class="textAreaInputC"
             placeholder="Ingrese el texto aquí"
           ></textarea>
         </div>
@@ -36,13 +37,48 @@
             </p>
           </div>
           <div id="buttons">
-            <input type="button" value="Encriptar" class="buttonsInput">
-            <input type="button" value="Desencriptar" class="buttonsInput">
+            <input
+              type="button"
+              value="Encriptar"
+              class="buttonsInput"
+              id="buttonEncriptar"
+              onclick="pasarValor();"
+            />
+            <input
+              type="button"
+              value="Desencriptar"
+              class="buttonsInput"
+              id="buttonDesencriptar"
+            />
           </div>
         </div>
       </section>
 
-      <section class="sectionsBody">a</section>
+      <section class="sectionsBody">
+        <div id="containerOutput">
+          <textarea
+            name="textAreaIn"
+            rows="1"
+            id="textAreaOutput"
+            class="textAreaInputC"
+            placeholder="Ingrese el texto aquí"
+            style="display: none"
+          ></textarea>
+          <div id="textosOutput">
+            <h2 id="tituloOutput">Ningún mensaje fue encontrado</h2>
+            <p id="textoOutput">
+              Ingrese el texto que deseas encriptar o desencriptar
+            </p>
+          </div>
+          <input
+            type="button"
+            value="Copiar"
+            class="buttonsInput"
+            id="buttonCopiar"
+            style="display: none"
+          />
+        </div>
+      </section>
     </main>
   </body>
 

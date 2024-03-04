@@ -143,6 +143,7 @@ table {
   margin: 0;
   padding: 0;
   font-family: "Nunito", sans-serif;
+  transition: all 0.5s ease-in-out;
 }
 
 body{
@@ -155,7 +156,6 @@ body{
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
- 
 }
 
 header{
@@ -168,17 +168,16 @@ header{
   flex-direction: row;
   justify-content: center;
   align-items: center;
- 
 }
 
 #containerHeader{
   height: 95%;
-  width: 90%;
+  width: 95%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-
+  padding-left: 10px;
 }
 
 #containerHeader > img{
@@ -189,36 +188,33 @@ header{
 main{
   position: absolute;
   top: 10%;
-  width: 90%;
+  width: 98%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   row-gap: 5px;
-
 }
 
 .sectionsBody{
-  width: 95%;
+  width: 98%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding: 5px;
-
+  padding: 1px;
 }
 
 #containertextAreaInput{
   width: 95%;
-  min-height: 150px;
+  min-height: 180px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   padding: 5px;
-
 }
 
-#textAreaInput{
+.textAreaInputC{
   width: 95%;
   padding: 5px;
   resize: none;
@@ -226,10 +222,9 @@ main{
   border: none;
   font-size: 20px;
   color: var(--primaryColor);
-  background-color: transparent;
 }
 
-#textAreaInput::placeholder{
+.textAreaInputC::placeholder{
   color: var(--primaryColor);
 }
 
@@ -242,14 +237,12 @@ main{
   align-items: center;
   padding: 5px;
   row-gap: 5px;
- 
 }
 
 #messageInformation{
   width: 100%;
   display: flex;
   padding: 5px;
-
 }
 
 #messageInf{
@@ -264,11 +257,11 @@ main{
 
 #messageInf > img{
   width: 20px;
-  height: 25px;
+  height: 23px;
 }
 
 #buttons{
-  width: 95%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -280,7 +273,7 @@ main{
   width: 95%;
   height: 60px;
   border: 1px solid var(--primaryColor);
-  border-radius: 15px;
+  border-radius: 20px;
   background-color: var(--primaryColor);
   color: var(--mainColor);
   font-size: 15px;
@@ -291,6 +284,55 @@ main{
   color: var(--primaryColor);
 }
 
+.buttonsInput:nth-child(3){
+  background-color: var(--mainColor);
+  color: var(--primaryColor); 
+  justify-content: center;
+  align-items: center;
+}
+
+#containerOutput{
+  width: 80%;
+  min-height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5px;
+
+  row-gap: 5px;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+#textAreaOutput{
+  width: 95%;
+  color: #495057;
+  border-radius: 10px;
+}
+
+#textosOutput{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  row-gap: 20px;
+  transform: translateY(10px);
+}
+
+#tituloOutput{
+  width: 95%;
+  font-size: 19px;
+  font-weight: bolder;
+}
+
+#textoOutput{
+  width: 100%;
+}
+
 @media (height < 550px) {
   main{
     top: 15%;
@@ -298,5 +340,32 @@ main{
 
   header{
     height: 15%;
+  }
+}
+
+@media (width > 670px) {
+
+  #containerHeader{
+    padding-left: 45px;
+  }
+
+  #buttons{
+    display: flex;
+    flex-direction: row;
+    column-gap: 25px;
+  }
+
+  #containerOutput{
+    margin-top: 40px;
+    width: 95%;
+    min-height: 150px;
+  } 
+
+  #textosOutput{
+    transform: translateY(30px);
+  }
+
+  #buttonCopiar{
+    background-color: #fff;
   }
 }
